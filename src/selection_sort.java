@@ -1,5 +1,6 @@
 import java.util.*;
-class Solution {
+
+class Solution2 {
 
     void selectionSort(int arr[], int n) {
 
@@ -13,6 +14,7 @@ class Solution {
                 }
             }
 
+            // Swap
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
@@ -20,17 +22,15 @@ class Solution {
     }
 }
 
+public class selection_sort {
 
-    public class selection_sort {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
 
-            int arr[] = {64, 25, 12, 22, 11};
-            int n = arr.length;
+        int arr[] = {64, 25, 12, 22, 11};
 
-            Solution obj = new Solution();
-            obj.selectionSort(arr, n);
+        Solution2 obj = new Solution2();
+        obj.selectionSort(arr, arr.length);
 
-            System.out.println(Arrays.toString(arr));
-        }
+        System.out.println(Arrays.toString(arr));
     }
-
+}
